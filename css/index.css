@@ -1,0 +1,43 @@
+* {
+    /* outline: 1px solid red; */
+}
+
+html {
+    cursor: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #d9e4e4;
+}
+
+.navbar, .navbar > * {
+    font-family: "SalmaPro";
+    font-size: 14pt;
+    color: rgb(34, 34, 34);
+}
+
+.navbar-elements {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-action-item {
+    padding: 20px;
+}
+
+.custom-cursor {
+    position: absolute;
+    top: 0; left: 0;
+    width: 1em; aspect-ratio: 1;
+    border-radius: 100%;
+    background-color: red;
+    /* transition-timing-function: ease-out; */
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 500ms ease;
+}
